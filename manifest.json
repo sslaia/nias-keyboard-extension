@@ -1,0 +1,21 @@
+{
+  "name": "Nias keyboard extension",
+  "version": "1.1",
+  "manifest_version": 3,
+  "description": "Adds support for typing Nias characters: ö (Right Alt + o) and ŵ (Right Alt + w).",
+  "permissions": ["input"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "input_components": [
+    {
+      "name": "Nias keyboard extension",
+      "type": "ime",
+      "id": "nias_ime",
+      "description": "Nias keyboard extension",
+      "language": "nia",
+      "layouts": ["us"]
+    }
+  ]
+}
+
